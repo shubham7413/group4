@@ -56,4 +56,11 @@
 /* footer */
 
 
+/* misc */
+::selection {
+    background: #fb5849;
+    color: #fff;
+}
+
+
 /* For mobile */
