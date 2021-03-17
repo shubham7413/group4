@@ -5,6 +5,7 @@ GROUP 4
     Shubham Chaurasiya
     Tejas Ambhore
 Link: https://templatemo.com/live/templatemo_558_klassy_cafe
+Hosted: https://shubham7413.github.io/group4/
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +14,9 @@ Link: https://templatemo.com/live/templatemo_558_klassy_cafe
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <title>Live View - templatemo 558 klassy cafe</title>
 </head>
 <body>
@@ -27,7 +31,7 @@ Link: https://templatemo.com/live/templatemo_558_klassy_cafe
 
     <!-- about us -->
     <div class="about-us row">
-        <div class="about-text col-6">
+        <div class="about-text col-1">
             <h6>- ABOUT US</h6>
             <h2>We Leave A Delicious Memory For You</h2>
             <p>
@@ -36,12 +40,12 @@ Link: https://templatemo.com/live/templatemo_558_klassy_cafe
             You are NOT allowed to redistribute the template ZIP file on any template donwnload website. Please contact us for more information.
             </p>
             <div class="row">
-                <img src="image/about/about-thumb-01.jpg" alt="" class="col-4">
-                <img src="image/about/about-thumb-02.jpg" alt="" class="col-4">
-                <img src="image/about/about-thumb-03.jpg" alt="" class="col-4">
+                <img src="image/about/about-thumb-01.jpg" alt="" class="col-2">
+                <img src="image/about/about-thumb-02.jpg" alt="" class="col-2">
+                <img src="image/about/about-thumb-03.jpg" alt="" class="col-2">
             </div>
         </div>
-        <div class="about-vid col-6">
+        <div class="about-vid col-3">
             <img src="image/about/about-video-bg.jpg" ></img>
         </div>
     </div>
@@ -55,7 +59,270 @@ Link: https://templatemo.com/live/templatemo_558_klassy_cafe
 
 
     <!-- klassy week(this week special meal offer) -->
+    <div class="week-container">
+        <div class="week-heading">
+            <h6 class="3">KLASSY WEEK</h6>
+            <h2 class="4">This Week's Special Meal Offers</h2>
+        </div>
+        <div class="week-nav row table">
+            <ul>
+                <li class="tab-container col-4 ">
+                    <a href="#tabs1" onclick="change(1)" id="default">
+                        
+                            <img src="image/tab/tab-icon-01.png" alt="Breakfast"  >
+                            Breakfast
+                        
+                    </a>
+                </li>
+                <li class="tab-container col-4">
+                    <a href="#tabs2" onclick="change(2)">
+                            <img src="image/tab/tab-icon-02.png" alt="Lunch" >
+                            Lunch
+                    </a>
+                </li>
+                <li  class="tab-container col-4">
+                    <a href="#tabs3" onclick="change(3)">
+                            <img src="image/tab/tab-icon-03.png" alt="Dinner" >
+                            Dinner
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            // for first time when page loads 
+            
+            function change(n){
+                if(n==1){
+                    document.getElementById("breakfast").style.display='block';
+                    document.getElementById("lunch").style.display='none';
+                    document.getElementById("dinner").style.display='none';
+                }
+                if(n==2){
+                    document.getElementById("lunch").style.display='block';
+                    document.getElementById("breakfast").style.display='none';
+                    document.getElementById("dinner").style.display='none';
+                }
+                if(n==3){
+                    document.getElementById("dinner").style.display='block';
+                    document.getElementById("breakfast").style.display='none';
+                    document.getElementById("lunch").style.display='none';
+                }
+            }
+        </script>
+        <!-- week starts -->
+        <!-- breakfast -->
+        <div class="meal-container row">
+            <a name="tabs1"></a>
+            <div id="breakfast">
+                <div class="meal-col-1 col-5">
+                        <div class="item col-6">
+                            <img src="image/week/item (3).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Fruit Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$9.90</h6>
+                            </div>
+                        </div>
+                        <div class="item col-6">
+                            <img src="image/week/item (2).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Orange Juice</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$8.50</h6>
+                            </div>
+                        </div>
+                        <div class="item col-6">
+                            <img src="image/week/item (1).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Fresh Chicken Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$10.50</h6>
+                            </div>
+                        </div>
+                </div>
+                <div class="meal-col-2 col-5">
+                    <div class="item col-6">
+                        <img src="image/week/item (6).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Omelette & Cheese</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$4.10</h6>
+                        </div>
+                    </div>
+                    <div class="item col-6">
+                        <img src="image/week/item (5).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Dollma Pire</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$5.50</h6>
+                        </div>
+                    </div>
+                    <div class="item col-6">
+                        <img src="image/week/item (4).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Eggs Omelette</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$6.50</h6>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        
+        <!-- lunch -->
+            <a name="tabs2"></a>
+            <div id="lunch">
+                <div class="meal-col-1 col-5">
+                    <div class="item col-6">
+                        <img src="image/week/item (4).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Eggs Omelette</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$6.50</h6>
+                        </div>
+                    </div>
+                    <div class="item col-6">
+                        <img src="image/week/item (5).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Dollma Pire</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$5.50</h6>
+                        </div>
+                    </div>
+                    <div class="item col-6">
+                        <img src="image/week/item (6).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Omelette & Cheese</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$4.10</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-col-2 col-5">
+                    <div class="row">
+                        <div class="item col-6">
+                            <img src="image/week/item (1).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Fresh Chicken Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$10.50</h6>
+                            </div>
+                        </div>
+                        <div class="item col-6">
+                            <img src="image/week/item (2).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Orange Juice</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$8.50</h6>
+                            </div>
+                        </div>
+                        <div class="item col-6">
+                            <img src="image/week/item (3).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Fruit Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$9.90</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        <!-- dinner -->
+            <a name="tabs3"></a>
+            <div id="dinner">
+                <div class="meal-col-1 col-5">
+                    <div class="row">
+                        <div class="item col-6">
+                            <img src="image/week/item (1).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Fresh Chicken Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$10.50</h6>
+                            </div>
+                        </div>
+                        <div class="item col-6">
+                            <img src="image/week/item (2).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Orange Juice</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$8.50</h6>
+                            </div>
+                        </div>
+                        <div class="item col-6">
+                            <img src="image/week/item (3).png" alt="" class="week-item">
+                            <div class="item-breif">
+                                <h4>Fruit Salad</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                            </div>
+                            <div class="price">
+                                <h6 >$9.90</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal-col-2 col-5">
+                    <div class="item col-6">
+                        <img src="image/week/item (4).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Eggs Omelette</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$6.50</h6>
+                        </div>
+                    </div>
+                    <div class="item col-6">
+                        <img src="image/week/item (5).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Dollma Pire</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$5.50</h6>
+                        </div>
+                    </div>
+                    <div class="item col-6">
+                        <img src="image/week/item (6).png" alt="" class="week-item">
+                        <div class="item-breif">
+                            <h4>Omelette & Cheese</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                        </div>
+                        <div class="price">
+                            <h6 >$4.10</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- footer -->
 
