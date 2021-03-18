@@ -314,16 +314,16 @@ a:hover{
     }
 }
 @media only screen and (max-width: 500px){
-    .col-1 {width: 450px;}/*.about-text column*/
-    .col-2 {width: 140px;}/*.about-us .about-text .row img.col2*/
-    .col-3 {width: 450px;}/*about-us about-vid img column*/
+    .col-1 {width: 90%;}/*.about-text column*/
+    .col-2 {width: 28%;}/*.about-us .about-text .row img.col2*/
+    .col-3 {width: 90%;}/*about-us about-vid img column*/
 
     .col-5 {width: 100%;  }/*meal-container breakfast,lunch,dinner (meal-col-)*/
     /* col-5 100% bcoz its mobile view */
     .col-6 {width: 100%; }/*individual meal in breakfast,lunch,dinner*/
 
     .about-us{
-        width: 450px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto; 
     }
@@ -335,7 +335,7 @@ a:hover{
     }
     
     div.week-container, div.meal-container{
-        width: 450px;
+        width: 90%;
         margin-left: auto;
         margin-right: auto; 
     }
@@ -351,7 +351,7 @@ a:hover{
         padding-top: 20px;
     }
     div.item-breif{
-        width: 320px;
+        width: 65%;
     }
     div.about-vid img{
         width: 100%; 
