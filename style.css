@@ -314,28 +314,33 @@ a:hover{
     }
 }
 @media only screen and (max-width: 500px){
-    .col-1 {width: 90%;}/*.about-text column*/
-    .col-2 {width: 28%;}/*.about-us .about-text .row img.col2*/
-    .col-3 {width: 90%;}/*about-us about-vid img column*/
+    .col-1 {width: 98%;}/*.about-text column*/
+    .col-2 {width: 30%;}/*.about-us .about-text .row img.col2*/
+    .col-3 {width: 98%;}/*about-us about-vid img column*/
 
     .col-5 {width: 100%;  }/*meal-container breakfast,lunch,dinner (meal-col-)*/
     /* col-5 100% bcoz its mobile view */
     .col-6 {width: 100%; }/*individual meal in breakfast,lunch,dinner*/
 
     .about-us{
-        width: 90%;
+        width: 98%;
         margin-left: auto;
         margin-right: auto; 
     }
     div.col-1,div.col-3{
         float: none;
     }
-    div.week-nav ul{
-        margin-left: 10px;
+    div.week-nav{
+        width: 100%;
     }
-    
+    div.week-nav ul li.tab-container{
+        margin-right: 0;
+    }
+    .tab-icon{
+        width: 70px;
+    }
     div.week-container, div.meal-container{
-        width: 90%;
+        width: 98%;
         margin-left: auto;
         margin-right: auto; 
     }
