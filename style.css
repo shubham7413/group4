@@ -55,6 +55,7 @@ body{
 .col-4 {width: 86px; }/*week-container week-nav tab-container column*/
 .col-5 {width: 50%;  }/*meal-container breakfast,lunch,dinner (meal-col-)*/
 .col-6 {width: 100%; }/*individual meal in breakfast,lunch,dinner*/
+.col-7{width: 20%;}
 
 
 
@@ -69,9 +70,8 @@ body{
 
 /* about us */
 .about-us{
-    width: 1110px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5vh 11vw;
+    max-width: 1110px;
 
 }
 .about-us h6,h2{
@@ -92,7 +92,95 @@ div.about-vid img{
 }
 
 /* menu */
-
+.menu-container{
+    background-color: rgba(251, 88, 73, 0.05);
+}
+.menu-heading-container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.menu-heading{
+    width: 350px;
+}
+.menu-heading h2,h6{
+    width: inherit;
+}
+.menu-heading h2{
+    margin-top: 10px;
+}
+.menu-heading h6{
+    padding-top: 90px;
+    margin-bottom: 0;
+    font-weight: 500;
+    
+}
+.menu-list{
+    width: 100%;
+}
+.dish{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.dish div.price{
+    position: absolute;
+    margin: 15px 15px;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    
+}
+div.dish div.price h6{
+    color: var(--white);
+    background-color: var(--reddish-brown);
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+    margin: 0;
+    text-align: center;
+    border-radius: 4px;
+}
+div.dish img.dish-img{
+    width: 100%;
+}
+div.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 5.5%;
+    right: 0;
+    width: 89%;
+    height: 15%;
+    overflow: hidden;
+    color: var(--white);
+    background-color: var(--reddish-brown);
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+    text-align: left;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+div.dish:hover div.overlay{
+    height: 50%;
+    overflow: hidden;
+    
+}
+div.overlay h1.title{
+    font-size: 16px;
+    margin-left: 20px;
+}
+div.overlay p.description{
+    margin-left: 20px;
+}
+div.overlay span.list{
+    margin-left: 20px;
+    
+}
+/* add style to anchor tag also */
 
 /* chef */
 
@@ -146,6 +234,9 @@ div.item{
     position: relative;
 }
 div.item div.price h6{
+    position: absolute;
+    right: 0;
+    top: 0;
     color: var(--white);
     background-color: var(--reddish-brown);
     width: 70px;
@@ -169,14 +260,8 @@ div.item-breif h4{
 div.item-breif p{
     margin-top: 0;
 }
-div.price{
-    position: absolute;
-    right: 0;
-    top: 0;
-}
 
 /* footer */
-
 
 
 /* misc */
@@ -210,157 +295,4 @@ a:hover{
     color: #fff;
 }
 
-/* media query */
-@media only screen and (max-width: 1120px){
-
-    .col-1 {width: 420px;}/*.about-text column*/
-    .col-2 {width: 130px;}/*.about-us .about-text .row img.col2*/
-    .col-3 {width: 425px;}/*about-us about-vid img column*/
-    .about-us{
-        width: 850px;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    div.week-nav ul{
-        margin-left: 240px;
-    }
-    div.week-container, div.meal-container{
-        width: 900px;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    div.item-breif{
-        width: 310px;
-    }
-
-}
-@media only screen and (max-width: 915px){
-    .col-1 {width: 690px;}/*.about-text column*/
-    .col-2 {width: 220px;}/*.about-us .about-text .row img.col2*/
-    .col-3 {width: 690px;}/*about-us about-vid img column*/
-
-    .col-5 {width: 100%;  }/*meal-container breakfast,lunch,dinner (meal-col-)*/
-    /* col-5 100% bcoz its mobile view */
-    .col-6 {width: 100%; }/*individual meal in breakfast,lunch,dinner*/
-
-    .about-us{
-        width: 690px;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    div.col-1,div.col-3{
-        float: none;
-    }
-    div.week-nav ul{
-        margin-left: 124px;
-    }
-    
-    div.week-container, div.meal-container{
-        width: 690px;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    div.col-5{
-        float: none;
-    }
-    div.item-breif{
-        width: 500px;
-    }
-    div.about-vid img{
-        width: 100%; 
-        max-width: none;
-        margin-top: 4.5vh;  
-    }
-}
-@media only screen and (max-width: 710px){
-    .col-1 {width: 85%;}/*.about-text column*/
-    .col-2 {width: 33%;}/*.about-us .about-text .row img.col2*/
-    .col-3 {width: 85%;}/*about-us about-vid img column*/
-
-    .col-5 {width: 100%;  }/*meal-container breakfast,lunch,dinner (meal-col-)*/
-    /* col-5 100% bcoz its mobile view */
-    .col-6 {width: 100%; }/*individual meal in breakfast,lunch,dinner*/
-
-    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6{
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    .about-us{
-        width: 100%;
-    }
-    div.col-1,div.col-3{
-        float: none;
-    }
-    div.week-nav ul{
-        width: 100%;
-        margin-left: 10%;
-    }
-    
-    div.week-container, div.meal-container{
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    div.col-5{
-        float: none;
-    }
-    div.item-breif{
-        width: 85%;
-    }
-    div.about-vid img{
-        width: 100%; 
-        max-width: none;
-        margin-top: 4.5vh;  
-    }
-}
-@media only screen and (max-width: 500px){
-    .col-1 {width: 98%;}/*.about-text column*/
-    .col-2 {width: 30%;}/*.about-us .about-text .row img.col2*/
-    .col-3 {width: 98%;}/*about-us about-vid img column*/
-
-    .col-5 {width: 100%;  }/*meal-container breakfast,lunch,dinner (meal-col-)*/
-    /* col-5 100% bcoz its mobile view */
-    .col-6 {width: 100%; }/*individual meal in breakfast,lunch,dinner*/
-
-    .about-us{
-        width: 98%;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    div.col-1,div.col-3{
-        float: none;
-    }
-    div.week-nav{
-        width: 100%;
-    }
-    div.week-nav ul li.tab-container{
-        margin-right: 0;
-    }
-    .tab-icon{
-        width: 70px;
-    }
-    div.week-container, div.meal-container{
-        width: 98%;
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    div.col-5{
-        float: none;
-    }
-    div.item img.week-item{
-        width: 75px;
-    }
-    div.item div.price h6{
-        width: 52px;
-        height: 52px;
-        padding-top: 20px;
-    }
-    div.item-breif{
-        width: 85%;
-    }
-    div.about-vid img{
-        width: 100%; 
-        max-width: none;
-        margin-top: 4.5vh;  
-    }
-}
+/* For mobile */
