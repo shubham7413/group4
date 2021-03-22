@@ -521,6 +521,9 @@ div.footer-container{
     margin-left: auto;
     margin-right: auto;
   }
+  body{
+    width: 100%;
+  }
   .about-us {
     width: 100%;
   }
@@ -627,7 +630,7 @@ footer .left-text-content ul li{
     width: 98%;
   } /*.about-text column*/
   .col-2 {
-    width: 30%;
+    width: 100%;
   } /*.about-us .about-text .row img.col2*/
   .col-3 {
     width: 98%;
@@ -640,7 +643,9 @@ footer .left-text-content ul li{
   .col-6 {
     width: 100%;
   } /*individual meal in breakfast,lunch,dinner*/
-
+  body{
+    width: 100% !important;
+  }
   .about-us {
     width: 98%;
     margin-left: auto;
@@ -710,6 +715,7 @@ div.item-breif h4{
 }
 div.item-breif p{
     margin-top: 0;
+    margin-right: 20%;
 }
 }
 
