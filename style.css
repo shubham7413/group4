@@ -40,6 +40,7 @@ body {
   font-family: "Poppins", Verdana, Arial, Helvetica, sans-serif;
   font-size: 12px;
   background: var(--white); /* replaced #F2F2F2 to white */
+  width: 100%;
 }
 /* grid */
 .row::after {
@@ -179,6 +180,10 @@ div.overlay {
   text-align: left;
   border-radius: 4px;
   transition: all 0.5s;
+}
+div.overlay a{
+    color: var(--white);
+    margin-left: 20px;
 }
 div.dish:hover div.overlay {
   height: 50%;
@@ -706,7 +711,7 @@ div.item-breif h4{
 div.item-breif p{
     margin-top: 0;
 }
-
+}
 
 
 /* misc */
@@ -738,5 +743,4 @@ a:hover{
 ::selection {
     background: var(--reddish-brown);
     color: #fff;
-}
 }
