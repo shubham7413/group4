@@ -314,8 +314,6 @@ footer .left-text-content ul li {
   display: inline-block;
   margin: 10px;
 }
-footer .left-text-content ul li:first-child {
-}
 footer .left-text-content ul li a {
   display: inline-block;
   text-align: center;
@@ -338,7 +336,6 @@ footer .logo {
   width: 20px;
   margin: 0px 0px;
   border-radius: 50%;
-}
 }
 /* misc */
 p {
@@ -741,4 +738,5 @@ a:hover{
 ::selection {
     background: var(--reddish-brown);
     color: #fff;
+}
 }
