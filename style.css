@@ -180,6 +180,10 @@ div.overlay {
   border-radius: 4px;
   transition: all 0.5s;
 }
+div.overlay a{
+    color: var(--white);
+    margin-left: 20px;
+}
 div.dish:hover div.overlay {
   height: 50%;
   overflow: hidden;
