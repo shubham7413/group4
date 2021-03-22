@@ -607,7 +607,7 @@ div.item-breif p{
 /* footer */
 
 footer {
-    
+    position:absolute;
     margin:0;
     border:0;
     outline:0;
@@ -625,7 +625,7 @@ footer {
   
   footer .right-text-content {
     padding-right: 110px;
-    display:inline-block;
+    display:inline;
   }
   footer .right-text-content p {
     padding-bottom: 5px;
