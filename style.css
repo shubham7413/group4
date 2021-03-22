@@ -278,7 +278,68 @@ div.item-breif p {
 }
 
 /* footer */
-
+.col-10{
+  width: 350px;
+}
+footer {
+  width: 100%;
+  background-color: #fb5849;
+}
+div.footer-container{
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fb5849;
+}
+footer .right-text-content {
+  display:inline;
+}
+footer .right-text-content p {
+  color: #fff;
+  font-size: 14px;
+  text-align: right;
+}
+footer .left-text-content {
+  display: block;
+}
+footer .left-text-content p {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+footer .left-text-content ul{
+  padding-left: 0;
+}
+footer .left-text-content ul li {
+  display: inline-block;
+  margin: 10px;
+}
+footer .left-text-content ul li:first-child {
+}
+footer .left-text-content ul li a {
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  width: 40px;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #fb5849;
+}
+footer .left-text-content ul li a:hover {
+  color: #2a2a2a;
+}
+footer .logo {
+  display: block;
+}
+.fa {
+  padding-top: 10px;
+  font-size: 20px;
+  width: 20px;
+  margin: 0px 0px;
+  border-radius: 50%;
+}
+}
 /* misc */
 p {
   line-height: 25px;
@@ -311,6 +372,14 @@ a:hover {
 }
 
 /* media query */
+@media only screen and (max-width: 1250px){
+  .col-10{
+    width: 260px;
+  }
+  div.footer-container{
+    width: 900px;
+  }
+}
 @media only screen and (max-width: 1120px) {
   .col-1 {
     width: 420px;
@@ -338,6 +407,19 @@ a:hover {
   div.item-breif {
     width: 310px;
   }
+  .col-10{
+    width: 270px;
+  }
+  div.footer-container{
+    width: 850px;
+  }
+}
+.col-10{
+  width: 280px;
+}
+
+div.footer-container{
+  width: 850px;
 }
 @media only screen and (max-width: 915px) {
   .col-1 {
@@ -388,7 +470,27 @@ a:hover {
     max-width: none;
     margin-top: 4.5vh;
   }
+  .col-10{
+    width: 400px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.footer-container{
+    width: 690px;
+  }
+  footer .logo{
+    padding-left: 40px;
+  }
+  footer .right-text-content p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding-right: 90px;
+  }
 }
+/* footer */
+
 @media only screen and (max-width: 710px) {
   .col-1 {
     width: 85%;
@@ -488,14 +590,6 @@ a:hover {
     
   }
 
-/* add style to anchor tag also */
-
-/* chef */
-
-
-/* contact */
-
-
   div.week-container,
   div.meal-container {
     width: 100%;
@@ -513,6 +607,18 @@ a:hover {
     max-width: none;
     margin-top: 4.5vh;
   }
+}
+footer .right-text-content,footer .right-text-content {
+  display:block;
+}
+footer .logo {
+  display: block;
+}
+footer .left-text-content,footer .left-text-content ul{
+  display: block;
+}
+footer .left-text-content ul li{
+  display: inline;
 }
 @media only screen and (max-width: 500px) {
   .col-1 {
@@ -604,76 +710,8 @@ div.item-breif p{
     margin-top: 0;
 }
 
-/* footer */
 
-footer {
-    
-    margin:0;
-    border:0;
-    outline:0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height:12vh;
-    margin-top: 100px;
-    padding: 21px 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fb5849;
-  }
-  
-  footer .right-text-content {
-    padding-right: 110px;
-    display:inline;
-  }
-  footer .right-text-content p {
-    padding-bottom: 5px;
-    color: #fff;
-    font-size: 14px;
-    text-align: right;
-  }
-  footer .left-text-content {
-    display: block;
-  }
-  footer .left-text-content p {
-    color: #fff;
-    font-size: 14px;
-    margin-right: 15px;
-    text-transform: uppercase;
-  }
-  footer .left-text-content ul li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-  footer .left-text-content ul li:first-child {
-    margin-left: 0px;
-  }
-  footer .left-text-content ul li a {
-    width: 44px;
-    height: 44px;
-    display: inline-block;
-    text-align: center;
-    line-height: 44px;
-    font-size: 20px;
-    background-color: #fff;
-    border-radius: 50%;
-    color: #fb5849;
-  }
-  footer .left-text-content ul li a:hover {
-    color: #2a2a2a;
-  }
-  footer .logo {
-    display: inline;
-  }
-  .fa {
-    padding-top: 10px;
-    font-size: 20px;
-    width: 20px;
-    margin: 0px 0px;
-    border-radius: 50%;
-  }
-}
+
 /* misc */
 p{
     line-height: 25px;
