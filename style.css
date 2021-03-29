@@ -54,15 +54,7 @@ body {
   padding: 15px;
 }
 
-.col-1 {
-  width: 540px;
-} /*.about-text column*/
-.col-2 {
-  width: 160px;
-} /*.about-us .about-text .row img.col2*/
-.col-3 {
-  width: 510px;
-} /*about-us about-vid img column*/
+
 .col-4 {
   width: 86px;
 } /*week-container week-nav tab-container column*/
@@ -85,6 +77,15 @@ body {
 /* header  nav bar*/
 
 /* about us */
+.col-1 {
+  width: 540px;
+} /*.about-text column*/
+.col-2 {
+  width: 160px;
+} /*.about-us .about-text .row img.col2*/
+.col-3 {
+  width: 510px;
+} /*about-us about-vid img column*/
 .about-us {
   max-width: 1110px;
   margin-left: auto;
@@ -102,27 +103,36 @@ h2 {
   letter-spacing: 2px;
 }
 .about-us h2{
+  width: 420px;
   line-height: 40px;
   margin-top: 20px;
   margin-bottom: 25px;
   font-size: 30px;
   font-weight: 900;
-  color: rgb(42,42,42);
+  color: #2a2a2a;
   padding-right: 120px;
 }
-.about-text {
-  width: 50%;
+div.about-text p{
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 25px;
+  color: #2a2a2a;
+  width: 540px;
 }
 div.row img.col-2 {
+  overflow: hidden;
+  vertical-align: middle;
   padding-left: 0;
 }
 div.about-vid img {
+  overflow: hidden;
   width: 100%;
   max-width: 470px;
   margin-top: 4.5vh;
 }
 
 /* menu */
+/*
 .menu-container {
   background-color: rgba(251, 88, 73, 0.05);
 }
@@ -212,26 +222,100 @@ div.overlay p.description {
 div.overlay span.list {
   margin-left: 20px;
 }
-/* add style to anchor tag also */
-
-/* chef */
-
-/* contact */
-
-
+*/
+/*menu2*/
+.menutitle{
+    width: 100%;
+    background: #fffafa;
+    height: 100%;    
+    padding: 100px;
+    box-sizing: border-box;
+}
+.menuhead{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;   
+}
+.hr{
+    width: 30px;
+    float: left;
+    margin-top: 4px;  
+}
+#mhr{
+    border: none;
+    background-color: #fb5849;
+    height: 1px;
+}
+.menutitlet{
+    width: 100px;
+    float: left;
+    margin-left: 10px;
+    color: #fb5849;   
+}
+.menuline{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    font-size: 30px;
+    font-weight: 999;
+}
+.menulinet{
+    width: 350px;
+    color: rgb(42,42,42);
+}
+.menuimagecon{  
+    display: flex;  
+    background: #fffafa;
+    overflow-x: auto;
+    overflow-y: hidden;   
+}
+.menucontainer{
+    background: #fffafa;
+    overflow: scroll;
+    scrollbar-color: #fffafa;    
+}
+.menucards{   
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-size: cover;
+    margin-top: auto;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+}
 /* klassy week */
 /* breakpoint for klassy week should be min 1110px(width) for tablet */
 div.week-container,
 div.meal-container {
   width: 1110px;
-  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
+}
+div.meal-container{
+  padding: 0 15px;
+}
+#breakfast,#lunch,#dinner{
+  width: 1140px;
+}
+.week-heading{
+  margin-bottom: 70px;
 }
 .week-heading h2 {
   width: 350px;
   margin-left: auto;
   margin-right: auto;
+}
+.week-heading h6 {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 650;
 }
 .week-heading,
 .tab-container {
@@ -245,7 +329,8 @@ div.week-nav ul li {
   margin: 0 10px;
 }
 div.week-nav ul {
-  margin-left: 340px;
+  width: 450px;
+  margin: auto;
 }
 /* below breakfast,lunch,dinner are set such as to display for first time when page loads */
 #breakfast {
@@ -254,6 +339,11 @@ div.week-nav ul {
 #lunch,
 #dinner {
   display: none;
+}
+div.meal-col-1{
+  width: 540px;
+  padding: 0;
+  margin-left: 15px;
 }
 /* below code to be added but not working */
 .tab-container a:link {
@@ -266,7 +356,11 @@ div.week-nav ul {
 /* meal of klassy week */
 div.item {
   position: relative;
+  width: 525px;
+  padding: 0 15px;
+  margin-bottom: 60px;
 }
+
 div.item div.price h6 {
   position: absolute;
   right: 0;
@@ -290,10 +384,129 @@ div.item-breif h4 {
   margin-top: 0;
   margin-bottom: 10px;
   padding-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 100px;
 }
 div.item-breif p {
+  width: 425px;
   margin-top: 0;
+  font-size: 14px;
+  line-height: 25px;
+  margin-right: 100px;
 }
+/*responsive*/
+@media only screen and (max-width: 1000px){
+    .menuimagecon{
+        width: 300%;
+    }
+    .menucards{
+        flex: 50%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .menuimagecon{
+        width: 120%;
+    }
+    .menucards{
+        flex: 20%;
+    }
+}
+/**/
+.menuprice{
+    margin: 0px;
+    width: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #fb5849;
+    border-radius: 3px;
+    color: white;
+    font-weight: 850;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.menudish{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fb5849;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+    transition: 0.5s ease;
+    color: white;
+    padding: 18px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+  
+.menucards:hover .menudish {
+    height: 50%;
+}
+.menudishn{
+    font-size: 18px;
+    font-weight: 700;
+}
+.menurlink{
+    margin-top: 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#mdish1{
+    background-image: url(image/menu/menu-item-01.jpg);
+    width: 340px;
+    height: 400px;
+}
+#mdish2{
+    background-image: url(image/menu/menu-item-02.jpg);
+    width: 340px;
+    height: 400px;
+
+}
+#mdish3{
+    background-image: url(image/menu/menu-item-03.jpg);
+    width: 340px;
+    height: 400px;
+}
+#mdish4{
+    background-image: url(image/menu/menu-item-04.jpg);
+    width: 340px;
+    height: 400px;
+}
+
+#mdish5{
+    background-image: url(image/menu/menu-item-05.jpg);
+    width: 340px;
+    height: 400px;
+}
+
+#mdish6{
+    background-image: url(image/menu/menu-item-03.jpg);
+    width: 340px;
+    height: 400px;
+}
+
+.menubuttons{
+    width: 100%;
+    background: rgb(255, 248, 248);
+    height: 50px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+/* add style to anchor tag also */
+
+/* chef */
+
+/* contact */
+
+
+
 
 /* footer */
 .col-10{
@@ -390,6 +603,18 @@ a:hover {
 @media only screen and (max-width: 1200px) {
   .about-us{
     width: 930px;
+  }
+}
+@media only screen and (max-width: 1250px){
+  .col-10{
+    width: 260px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  div.footer-container{
+    width: 900px;
+    margin-left: auto;
+    margin-right:auto;
   }
 }
 @media only screen and (max-width: 1120px) {
