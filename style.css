@@ -101,6 +101,7 @@ h2 {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 2px;
+  width: 420px;
 }
 .about-us h2{
   width: 420px;
@@ -618,29 +619,11 @@ a:hover {
   }
 }
 @media only screen and (max-width: 1120px) {
-  .col-1 {
-    width: 420px;
-  } /*.about-text column*/
-  .col-2 {
-    width: 130px;
-  } /*.about-us .about-text .row img.col2*/
-  .col-3 {
-    width: 425px;
-  } /*about-us about-vid img column*/
-  .about-us {
-    width: 850px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
   div.week-nav ul {
     margin-left: 240px;
   }
-  div.week-container,
-  div.meal-container {
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ 
   div.item-breif {
     width: 310px;
   }
@@ -664,54 +647,6 @@ div.footer-container{
   }
 }
 @media only screen and (max-width: 915px) {
-  .col-1 {
-    width: 690px;
-  } /*.about-text column*/
-  .col-2 {
-    width: 220px;
-  } /*.about-us .about-text .row img.col2*/
-  .col-3 {
-    width: 690px;
-  } /*about-us about-vid img column*/
-
-  .col-5 {
-    width: 100%;
-  } /*meal-container breakfast,lunch,dinner (meal-col-)*/
-  /* col-5 100% bcoz its mobile view */
-  .col-6 {
-    width: 100%;
-  } /*individual meal in breakfast,lunch,dinner*/
-
-  .about-us {
-    width: 690px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  div.col-1,
-  div.col-3 {
-    float: none;
-  }
-  div.week-nav ul {
-    margin-left: 124px;
-  }
-
-  div.week-container,
-  div.meal-container {
-    width: 690px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  div.col-5 {
-    float: none;
-  }
-  div.item-breif {
-    width: 500px;
-  }
-  div.about-vid img {
-    width: 100%;
-    max-width: none;
-    margin-top: 4.5vh;
-  }
   .col-10{
     width: 400px;
     float: none;
@@ -992,4 +927,105 @@ a:hover{
 ::selection {
     background: var(--reddish-brown);
     color: #fff;
+}
+
+/* revised css for media queries */
+@media only screen and (max-width: 1200px){
+  /* about us */
+  .col-1 {
+    width: 450px;
+  } /*.about-text column*/
+  .col-2 {
+    width: 129px;
+  } /*.about-us .about-text .row img.col2*/
+  .col-3 {
+    width: 420px;
+  } /*about-us about-vid img column*/
+  .about-us {
+    max-width: 930px;
+  }
+  div.about-text p{
+    width: 450px;
+  }
+  div.week-container,
+  div.meal-container {
+    width: 930px;
+  }
+  .week-heading h2,h6 {
+    width: 289px;
+  }
+  div.meal-col-1{
+    width: 435px;
+  }
+  div.item-breif h4{
+    width: 335px;
+  }
+  div.item-breif p {
+    width: 335px;
+  }
+  div.item div.price h6 {
+    position: absolute;
+    top: 0;
+    left: 365px;
+  }
+}
+@media only screen and (max-width: 992px){
+  /* about us */
+  .col-1 {
+    width: 330px;
+  } /*.about-text column*/
+  .col-2 {
+    width: 100px;
+  } /*.about-us .about-text .row img.col2*/
+  .col-3 {
+    width: 330px;
+  } /*about-us about-vid img column*/
+  .about-us {
+    max-width: 690px;
+  }
+  div.about-text p{
+    width: 330px;
+  }
+  .about-us h6 {
+  width: 330px;
+  }
+  .about-us h2{
+    width: 330px;
+  }
+  .about-us p{
+    width: 330px;
+  }
+  div.about-vid img {
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  div.week-container,
+  div.meal-container {
+    width: 690px;
+  }
+  .week-heading h2,h6 {
+    width: 690px;
+  }
+  div.meal-col-1{
+    width: 435px;
+  }
+  div.item-breif h4{
+    width: 335px;
+  }
+  div.item-breif p {
+    width: 335px;
+  }
+  div.item div.price h6 {
+    position: absolute;
+    top: 0;
+    left: 365px;
+  }
+  .col-5{
+    width: 100%;
+    float: none;
+  }
+  #breakfast,#lunch,#dinner {
+    width: 690px;
+  }
+
 }
