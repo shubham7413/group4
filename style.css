@@ -1056,7 +1056,6 @@ a:hover{
   }
   div.about-text p{
     width: 480px;
-    padding-left: ;
   }
   .about-us h6 {
   width: 510px;
@@ -1090,14 +1089,14 @@ a:hover{
     font-weight: 600;
   }
   div.item-breif p {
-    width: 410px;
+    width: 380px;
     font-size: 15px;
     
   }
   div.item div.price h6 {
     position: absolute;
     top: 0;
-    left: 440px;
+    left: 400px;
   }
   .col-5{
     width: 100%;
@@ -1115,5 +1114,87 @@ a:hover{
   div.week-nav {
     margin-bottom: 60px;
   }
+  div.col-6{
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .col-1 {
+    width: 100vw;
+  } /*.about-text column*/
+  .col-2 {
+    width: 30vw;
+  } /*.about-us .about-text .row img.col2*/
+  .col-3 {
+    width: 100vw;
+  } /*about-us about-vid img column*/
+  .about-us {
+    max-width: 100vw;
+  }
+  div.about-text p{
+    width: 100vw;
+  }
+  .about-us h6 {
+  width: 100vw;
+  }
+  .about-us h2{
+    width: 100vw;
+  }
+  .about-us p{
+    width: 100vw;
+  }
+  div.about-vid img {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
 
+  div.week-container,
+  div.meal-container {
+    width: 100vw;
+  }
+  .week-heading h2,h6 {
+    width: 100vw;
+  }
+  div.meal-col-1{
+    width: 100vw;
+  }
+  div.item{
+    margin-bottom: 40px;
+  }
+  div.item-breif h4{
+    width: 100vw;
+    font-weight: 600;
+  }
+  div.item-breif p {
+    width: 100vw;
+    font-size: 15px;
+    
+  }
+  div.item-breif {
+    width: 20vw;
+  }
+  div.item div.price h6 {
+    position: absolute;
+    top: 0;
+    right: 80vw;
+  }
+  .col-5{
+    width: 100%;
+    float: none;
+  }
+  #breakfast,#lunch,#dinner {
+    width: 100vw;
+    margin: auto;
+  }
+  div.week-nav ul {
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.week-nav {
+    margin-bottom: 60px;
+  }
+  div.col-6{
+    padding-left: 0;
+  }
 }
