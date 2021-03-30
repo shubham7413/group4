@@ -1009,6 +1009,9 @@ a:hover{
   div.meal-col-1{
     width: 435px;
   }
+  div.item{
+    margin-bottom: 0;
+  }
   div.item-breif h4{
     width: 335px;
   }
@@ -1025,7 +1028,92 @@ a:hover{
     float: none;
   }
   #breakfast,#lunch,#dinner {
-    width: 690px;
+    width: 440px;
+    margin: auto;
+  }
+  div.week-nav ul {
+    width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.week-nav {
+    margin-bottom: 60px;
+  }
+
+}
+@media only screen and (max-width: 768px){
+  .col-1 {
+    width: 510px;
+  } /*.about-text column*/
+  .col-2 {
+    width: 160px;
+  } /*.about-us .about-text .row img.col2*/
+  .col-3 {
+    width: 510px;
+  } /*about-us about-vid img column*/
+  .about-us {
+    max-width: 510px;
+  }
+  div.about-text p{
+    width: 480px;
+    padding-left: ;
+  }
+  .about-us h6 {
+  width: 510px;
+  }
+  .about-us h2{
+    width: 510px;
+  }
+  .about-us p{
+    width: 510px;
+  }
+  div.about-vid img {
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+
+  div.week-container,
+  div.meal-container {
+    width: 510px;
+  }
+  .week-heading h2,h6 {
+    width: 510px;
+  }
+  div.meal-col-1{
+    width: 510px;
+  }
+  div.item{
+    margin-bottom: 40px;
+  }
+  div.item-breif h4{
+    width: 410px;
+    font-weight: 600;
+  }
+  div.item-breif p {
+    width: 410px;
+    font-size: 15px;
+    
+  }
+  div.item div.price h6 {
+    position: absolute;
+    top: 0;
+    left: 440px;
+  }
+  .col-5{
+    width: 100%;
+    float: none;
+  }
+  #breakfast,#lunch,#dinner {
+    width: 510px;
+    margin: auto;
+  }
+  div.week-nav ul {
+    width: 358px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.week-nav {
+    margin-bottom: 60px;
   }
 
 }
